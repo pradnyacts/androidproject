@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.9.13 on win32)" generated="20230102 19:43:10.900" rpa="false" schemaversion="3">
+<suite id="s1" name="Open Application" source="C:\Users\pradn\PycharmProjects\androidproject\Tests\open_application.robot">
+<test id="s1-t1" name="open_application" line="5">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=chat21.android.demo</arg>
+<arg>appActivity=chat21.android.demo.SplashActivity</arg>
+<arg>automationname=uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20230102 19:43:11.459" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | platformName='Android' | deviceName='emulator-5554' | appPackage='chat21.android.demo' | appActivity='chat21.android.demo.SplashActivity' | automationname='uiautomator2' ]</msg>
+<msg timestamp="20230102 19:43:11.460" level="DEBUG">POST http://localhost:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "chat21.android.demo", "appium:appActivity": "chat21.android.demo.SplashActivity", "appium:automationname": "uiautomator2"}}}</msg>
+<msg timestamp="20230102 19:43:11.497" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg timestamp="20230102 19:43:29.745" level="DEBUG">http://localhost:4723 "POST /wd/hub/session HTTP/1.1" 200 929</msg>
+<msg timestamp="20230102 19:43:29.746" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"emulator-5554","appPackage":"chat21.android.demo","appActivity":"chat21.android.demo.SplashActivity","automationname":"uiautomator2"},"platformName":"Android","deviceName":"emulator-5554","appPackage":"chat21.android.demo","appActivity":"chat21.android.demo.SplashActivity","automationname":"uiautomator2","deviceUDID":"emulator-5554","deviceApiLevel":29,"platformVersion":"10","deviceScreenSize":"1080x2220","deviceScreenDensity":440,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","pixelRatio":2.75,"statBarHeight":66,"viewportRect":{"left":0,"top":66,"width":1080,"height":2022}},"sessionId":"ae3055b2-cdfb-40ad-b9b7-fabcb8e24ec9"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '929', 'ETag': 'W/"3a1-WlUTaY4seO7i+YASDEj5qUDseLs"', 'Date': 'Tue, 03 Jan 2023 03:43:29 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20230102 19:43:29.746" level="DEBUG">Finished Request</msg>
+<msg timestamp="20230102 19:43:29.749" level="DEBUG">Opened application with session id ae3055b2-cdfb-40ad-b9b7-fabcb8e24ec9</msg>
+<msg timestamp="20230102 19:43:29.751" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20230102 19:43:11.459" endtime="20230102 19:43:29.751"/>
+</kw>
+<status status="PASS" starttime="20230102 19:43:11.458" endtime="20230102 19:43:29.753"/>
+</test>
+<status status="PASS" starttime="20230102 19:43:10.904" endtime="20230102 19:43:29.757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open Application">Open Application</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
